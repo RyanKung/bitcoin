@@ -46,8 +46,8 @@ if ENABLE_ZMQ:
     try:
         import zmq
     except ImportError:
-        print('''WARNING: \"import zmq\" failed. Setting ENABLE_ZMQ=0. "
-        To run zmq tests, see dependency info in /qa/README.md.''')
+        print('''WARNING: \"import zmq\" failed. Setting ENABLE_ZMQ=0. " \
+              To run zmq tests, see dependency info in /qa/README.md.''')
         ENABLE_ZMQ = 0
 
 ENABLE_COVERAGE = 0
